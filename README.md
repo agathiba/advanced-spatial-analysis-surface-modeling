@@ -22,6 +22,11 @@ Comprehensive spatial modeling workflows developed for the postgraduate course *
   * **Kernel Density Estimation (KDE):** Modeled continuous density surfaces (heatmaps) to identify spatial clusters without the constraints of artificial administrative boundaries.
   * **Comparative Synthesis:** Analyzed trade-offs between discrete territorial assignment (Thiessen) and continuous probability fields (KDE).
 
+<p align="center">
+  <img src="images/john_snow_thiessen_kde.png" alt="John Snow 1854: Thiessen polygons around water pumps (left) and kernel density of deaths (right)">
+  <br><em>John Snow 1854: Thiessen polygons around water pumps (left) and kernel density of deaths (right)</em>
+</p>
+
 ---
 
 ### 2. Terrain Visibility & Military Viewshed Modeling (Arcadia, Greece)
@@ -42,6 +47,16 @@ Comprehensive spatial modeling workflows developed for the postgraduate course *
   * **Surface Subtraction (Raster Math):** Generated vertical deviation rasters ($DEM_{diff} = DEM_{TIN} - DEM_{Topo}$), highlighting discrepancies between $-12.55\text{ m}$ and $+20.04\text{ m}$.
   * **3D Visualization:** Rendered continuous vertical residual models in 3D scene environments to detect interpolation artifacts along ridgelines and drainage lines.
 
+<p align="center">
+  <img src="images/dem_difference_lavrion.png" width="650" alt="DEM difference map (TIN vs. Topo to Raster), Lavrion">
+  <br><em>DEM difference map (TIN vs. Topo to Raster), Lavrion</em>
+</p>
+
+<p align="center">
+  <img src="images/dem_difference_3d.png" width="650" alt="3D view of the two surfaces and their difference">
+  <br><em>3D view of the two surfaces and their difference</em>
+</p>
+
 ---
 
 ### 4. Automated Geoprocessing & GDEM Accuracy Verification (ModelBuilder)
@@ -51,6 +66,11 @@ Comprehensive spatial modeling workflows developed for the postgraduate course *
   * **ModelBuilder Automation:** Designed an automated batch-processing model utilizing `Iterate Rasters` and `Project Raster` to transform multiple DEM tiles from WGS84 to the Greek Grid (**EGSA '87 / EPSG:2100**).
   * **Random Spatial Sampling:** Deployed 4,000 stratified random points (1,000 points per neighboring geographic quadrant) enforced with an 80-meter minimum nearest-neighbor distance threshold.
   * **Statistical Error Distribution:** Extracted dual elevation samples; computed distribution statistics (Mean error $\mu = +5.11\text{ m}$, Standard Deviation $\sigma = 27.86\text{ m}$, Skewness = -0.05, Kurtosis = 2.88) to assess regional systematic bias and terrain-dependent noise.
+
+<p align="center">
+  <img src="images/aster_gdem_accuracy.png" alt="ASTER GDEM vs. national DEM: study area and distribution of elevation differences">
+  <br><em>ASTER GDEM vs. national DEM: study area and distribution of elevation differences</em>
+</p>
 
 ---
 
