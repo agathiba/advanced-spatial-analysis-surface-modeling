@@ -27,6 +27,16 @@ Comprehensive spatial modeling workflows developed for the postgraduate course *
   <br><em>John Snow 1854: Thiessen polygons around water pumps (left) and kernel density of deaths (right)</em>
 </p>
 
+<p align="center">
+  <img src="images/john_snow_deaths_per_pump.png" alt="Thiessen polygons coloured by number of deaths, and overlay with the kernel density surface">
+  <br><em>Thiessen polygons coloured by number of deaths (left) and overlay with the kernel density surface (right)</em>
+</p>
+
+<p align="center">
+  <img src="images/john_snow_summary_table.png" width="480" alt="Summary table of deaths per pump catchment">
+  <br><em>Deaths aggregated per pump catchment – the Broad Street pump (ID 7) accounts for 354 deaths</em>
+</p>
+
 ---
 
 ### 2. Terrain Visibility & Military Viewshed Modeling (Arcadia, Greece)
@@ -36,6 +46,11 @@ Comprehensive spatial modeling workflows developed for the postgraduate course *
   * **Viewshed Analysis:** Calculated intervisibility surfaces from 26 historical observation points draped over hillshaded topography.
   * **Network Classification:** Intersected ancient transport corridors with the cumulative viewshed, classifying 186.6 km as visible and 604.1 km as occluded/blind terrain.
   * **Proximity Modeling:** Computed Euclidean distance vectors from lookout stations to the Argolic coastline (ranging from 98.6 m to 431.7 m).
+
+<p align="center">
+  <img src="images/viewshed_arcadia.png" width="800" alt="Final map: viewshed of ancient fortifications in Arcadia with visible and hidden sections of the ancient road network">
+  <br><em>Final map: visibility surface from the ancient fortifications over hillshaded relief, with visible (dark green) and hidden (red) sections of the ancient road network</em>
+</p>
 
 ---
 
@@ -71,6 +86,8 @@ Comprehensive spatial modeling workflows developed for the postgraduate course *
   <img src="images/aster_gdem_accuracy.png" alt="ASTER GDEM vs. national DEM: study area and distribution of elevation differences">
   <br><em>ASTER GDEM vs. national DEM: study area and distribution of elevation differences</em>
 </p>
+
+* 🐍 **[Python (ArcPy) version of the ModelBuilder model](./modelbuilder/project_aster_dems.py)** – batch reprojection of the ASTER GDEM tiles to GGRS87 / Greek Grid.
 
 ---
 
